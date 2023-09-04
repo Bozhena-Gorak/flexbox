@@ -5,7 +5,7 @@
     /* height: 400px; */
     padding: 10px;
 
-    /* Flexbox */
+    /* Flexboxt */
     display: flex;
     flex-direction: row;
     justify-content: flex-start; /* вирівнювання по головній осі */

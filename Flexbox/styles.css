@@ -1,0 +1,99 @@
+.flex-container {
+    background-color: antiquewhite;
+    border: 7px solid rgb(185, 156, 118);
+    width: 600px;
+    /* height: 400px; */
+    padding: 10px;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* вирівнювання по головній осі */
+    align-items: center; /* вирівнювання по поперечній осі */
+    flex-wrap: nowrap; /* перенесення на нові рядки */
+    /* flex-flow: <flex-direction (row)> <flex-wrap(wrap)>; */
+    align-content: center; /* вирівнювання всередині контейнера (багаторядковий режим) */
+}
+
+.flex-block {
+    background-color: cadetblue;
+    color: white ;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    border: 2px solid antiquewhite;
+
+    /* Flexbox */
+    /* order: 2; */
+}
+
+.flex-block-1 {
+    flex-shrink: 1;
+    /* flex: <flex-grow> <flex-shrink> <flex-basis>*/
+}
+
+.flex-block-2 {
+    height: 20px;
+}
+
+.flex-block-4 {
+    height: 15px;
+    align-self: flex-end; /* вирівнювання по поперечній осі, але конкретно для вказаного блоку */
+    flex-basis: 300px;
+    /* flex-shrink: 2; */
+    /* order: 0; */
+}
+
+.flex-block-8 {
+    height: 20px;
+    /* flex-grow: 2; */
+    /* order: 1; */
+}
+
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu {
+    width: 30%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    min-width: 300px;
+}
+
+.articles-block {
+    width: 70%;
+    background-color: pink;
+    color: white; /* то я сама написала, не знаю чи точно тут за порядковістю треба */
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+.article {
+    min-height: 100px;
+    border: 1px solid lightblue;
+    margin: 15px;
+    width: 60px;
+}
+
+.article-2 {
+    margin-left: auto;
+    /* margin-right: auto; */
+}
+
+.article-3 {
+    /* margin-left: auto; */
+    margin-right: auto;
+}
